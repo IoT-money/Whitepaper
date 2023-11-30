@@ -15,7 +15,7 @@
 * [Section 11: Topology Mirror Mesh Hybrid](section-11-topology-mirror-mesh-hybrid.md)
 * [Section 12: Root Shard Contract Aggregation](section-12-root-shard-contract-aggregation.md)
 * [Section 13: Incentivizing Honest Voting](section-13-incentivizing-honest-voting.md)
-* [Selection 14: Extensive Formalization of Zero-Knowledge Proof Shard Synchronization](selection-14-extensive-formalization-of-zero-knowledge-proof-shard-synchronization.md)
+* [Selection 14: Zero-Shot Succinct Nested State Proof](selection-14-zero-shot-succinct-nested-state-proof.md)
 * [Section 15: Backup Shards](section-15-backup-shards.md)
 * [Section 16: Security Analysis](section-16-security-analysis.md)
 * [Section 17: Rigorous Mathematical Proof of Scalability](section-17-rigorous-mathematical-proof-of-scalability.md)
