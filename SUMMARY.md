@@ -4,7 +4,7 @@
 * [Abstract](abstract.md)
 * [Section 1: System Overview](section-1-system-overview.md)
 * [Section 2: Key Properties and Mechanisms](section-2-key-properties-and-mechanisms.md)
-* [Section 3: Algorithmic Design and Implementation](section-3-algorithmic-design-and-implementation.md)
+* [Section 3: COTO (Client-Side Ordinal Transaction Ordering)](section-3-coto-client-side-ordinal-transaction-ordering.md)
 * [Section 4: Synergistic Scaling in the SMT Protocol](section-4-synergistic-scaling-in-the-smt-protocol.md)
 * [Section 5: Asynchronous Sharding](section-5-asynchronous-sharding.md)
 * [Section 6: Blockless Architecture using Cryptographic State Proofs](section-6-blockless-architecture-using-cryptographic-state-proofs.md)
