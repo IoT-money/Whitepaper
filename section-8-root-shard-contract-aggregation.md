@@ -2,6 +2,8 @@
 
 **Mathematical Model**
 
+<figure><img src=".gitbook/assets/I_want_you_to_draw_a_bunch_of_sierpinski_triangle_glowing_crystal_shards_sticking_out_of_the_ground,_and_they_all_have_glowing_electric_beams_all_emitting_to_a_central_sierpinski_triangle_shaped_hat_wearing_wizard_that_has_an_eye_in_the (4).png" alt=""><figcaption></figcaption></figure>
+
 > The Root Shard Contract Aggregation in the SMT protocol involves an intricate mathematical framework for aggregating state proofs from various child shards. The root shard plays a pivotal role in collating these proofs to maintain a comprehensive view of the network's state. The aggregation process is mathematically represented as:
 
 $$
