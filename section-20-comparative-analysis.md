@@ -1,4 +1,4 @@
-# Section 19: Comparative Analysis
+# Section 20: Comparative Analysis
 
 Optimistic Rollup
 
@@ -25,7 +25,7 @@ $$
 \Theta_{Omni} = \sum_{i=1}^{n} \Theta_{\text{Chain } i}
 $$
 
-where $( \Theta\_{\text{Chain } i} )$ is the throughput of the $( i )-th$ integrated blockchain.
+where $$( \Theta_{\text{Chain } i} )$$ is the throughput of the $$( i )-th$$ integrated blockchain.
 
 #### NEAR Protocol
 
@@ -36,7 +36,7 @@ where $( \Theta\_{\text{Chain } i} )$ is the throughput of the $( i )-th$ integr
 * Nightshade sharding technology for high transaction throughput.
 * Focuses on developer and user-friendly experiences.
 
-**Mathematical Model:** The scalability of NEAR Protocol can be represented by its sharding mechanism:
+**Mathematical Model:** The scalability of $$NEAR$$ Protocol can be represented by its sharding mechanism:
 
 $$
 \Theta_{NEAR} = \sum_{i=1}^{n} \Theta_{\text{Shard } i}
@@ -84,15 +84,15 @@ $$
 
 #### IoT.money Protocol
 
-> Specifically designed for IoT applications, incorporates advanced sharding, COTO, and BISPs to address scalability, security, and efficiency challenges in blockchain networks.
+> Specifically designed for $$IoT$$ applications, incorporates advanced sharding, $$COTO$$, and $$BISPs$$ to address scalability, security, and efficiency challenges in blockchain networks.
 
 **Core Features:**
 
 1. Sharding for parallel transaction processing.
-2. COTO for efficient client-side transaction ordering.
-3. BISPs for cryptographic state integrity across shards.
+2. $$COTO$$ for efficient client-side transaction ordering.
+3. $$BISPs$$ for cryptographic state integrity across shards.
 
-**Mathematical Representation:** The total throughput of the IoT.money network, considering sharding and COTO, can be modeled as:
+**Mathematical Representation:** The total throughput of the IoT.money network, considering sharding and $$COTO$$, can be modeled as:
 
 $$
 \Theta_{IoT.money} = \sum_{i \in \mathcal{S}} \Theta_{S_i} \text{, with enhanced efficiency due to COTO and BISPs}

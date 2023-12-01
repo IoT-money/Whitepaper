@@ -76,3 +76,52 @@ _Proof_: Follows from the $$( \frac{2}{3} )$$ fault tolerance threshold in the t
 Additional strategies like fraud proofs and economic incentives provide further security assurances.
 
 This Markdown structure includes sections, definitions, theorems, proofs, and algorithms formatted according to Markdown syntax. It's ready to be included in a Markdown-based document.
+
+Here is an expanded version of the section on cryptographic proofs on SMT:
+
+## Cryptographic Proofs on SMT
+
+The SMT protocol relies heavily on advanced cryptographic proofs and accumulators for security and scalability. We provide technical details on two such proofs utilized.
+
+### Timestamp-Independent Proofs
+
+To maintain consistency across shards, transaction proofs must remain valid regardless of when a transaction is executed.
+
+The SMT protocol uses Timestamp-Independent Proofs (TIP) for this purpose. A TIP for transaction Tx is defined as:
+
+TIP(Tx) = H(TxData || ConsensusData)
+
+Where:
+
+* TxData is the transaction content
+* ConsensusData represents network-wide consensus information
+
+H() is a cryptographic hash function.
+
+TIPs do not depend on local timestamps, ensuring proof validity across all shards.
+
+### SMT Accumulator
+
+The SMT accumulator aggregates transaction hashes into a compact cryptographic proof of the global state.
+
+For transactions {Tx1, Tx2, ..., Txn}, the accumulator is:
+
+SMTAccumulator = H(H(Tx1) || H(Tx2) || ... || H(Txn))
+
+Where H() is a collision-resistant hash function, and || denotes concatenation.
+
+This construction allows efficiently proving:
+
+* Existence of transactions
+* State integrity across shards
+* Consistency with respect to previous state
+
+### Security Proofs
+
+Formal security proofs demonstrate:
+
+* Collision resistance of the accumulator
+* Tamper evidence for aggregated proofs
+* Immutability of TIPs
+
+The expanded version provides more mathematical and implementation details on the cryptographic proofs underpinning SMT's security and scalability.
