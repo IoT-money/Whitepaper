@@ -22,7 +22,7 @@
 * [Section 18: Rigorous Mathematical Proof of Scalability](section-18-rigorous-mathematical-proof-of-scalability.md)
 * [Section 19: System Performance Estimates](section-19-system-performance-estimates.md)
 * [Section 20: Comparative Analysis](section-20-comparative-analysis.md)
-* [Page](page.md)
+* [Section 21: Fair Decentralized Governance & Anonymous KYC Verification](section-21-fair-decentralized-governance-and-anonymous-kyc-verification.md)
 * [Algorithms](algorithms.md)
 * [Conclusion](conclusion.md)
 * [Bibliography](bibliography.md)
