@@ -23,6 +23,7 @@
 * [Section 19: System Performance Estimates](section-19-system-performance-estimates.md)
 * [Section 20: Comparative Analysis](section-20-comparative-analysis.md)
 * [Section 21: Fair Decentralized Governance & Anonymous KYC Verification](section-21-fair-decentralized-governance-and-anonymous-kyc-verification.md)
+* [Section 22: Optimized Light Clients in the SMT Protocol](section-22-optimized-light-clients-in-the-smt-protocol.md)
 * [Algorithms](algorithms.md)
 * [Conclusion](conclusion.md)
 * [Bibliography](bibliography.md)

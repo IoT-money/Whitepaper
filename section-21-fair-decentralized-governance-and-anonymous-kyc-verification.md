@@ -1,4 +1,6 @@
-# Page
+# Section 21: Fair Decentralized Governance & Anonymous KYC Verification
+
+<figure><img src=".gitbook/assets/draw_a_court_room_with_the_judge_wearing_microchip_texture_sierpinski_triangle_shaped_hat_wearing_wizard_that_has_an_eye_in_the_middle._the_court_room_of_suits_with_triangle_heads_cheer (4).png" alt=""><figcaption></figcaption></figure>
 
 Got it, thanks for clarifying. Here is the text updated to surround all math expressions with double dollar signs:
 
