@@ -2,6 +2,8 @@
 
 ### Introduction
 
+<figure><img src=".gitbook/assets/I_want_you_to_draw_a_bunch_of_sierpinski_triangle_glowing_crystal_shards_sticking_out_of_the_ground,_and_they_all_have_glowing_electric_beams_all_emitting_to_a_central_sierpinski_triangle_shaped_hat_wearing_wizard_that_has_an_eye_in_the (1).png" alt=""><figcaption></figcaption></figure>
+
 The Sierpinski Merkle Trie $$(SMT)$$ protocol achieves substantial scalability through the synergistic combination of asynchronous sharding, Client-Side Ordinal Transaction Ordering $$(COTO)$$, and hierarchical SMT structures. This section provides an in-depth analysis of these mechanisms and their mathematical foundations.
 
 ### Asynchronous Sharding
