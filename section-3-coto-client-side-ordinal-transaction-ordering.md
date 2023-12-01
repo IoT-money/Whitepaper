@@ -1,4 +1,4 @@
-# Section 3: Algorithmic Design and Implementation
+# Section 3: COTO (Client-Side Ordinal Transaction Ordering)
 
 #### Consensus Data-Based Ordering
 
@@ -110,8 +110,65 @@ $$
 
 Dense timestamps provide a global total order of transactions in the asynchronous SMT protocol.
 
-### Conclusion
+### Remarks
 
-Logical clocks and dense timestamps are effective techniques to handle timestamp discrepancies in distributed environments like SMT. They enable chronological transaction ordering and align with the ordinal theory-based ordering used in the protocol.
+Logical clocks and dense timestamps are effective techniques to handle timestamp discrepancies in distributed environments like SMT. They enable chronological transaction ordering and align with the ordinal theory-based ordering used in the protocol.\
+\
+\
+Here is an expanded version of the section on transaction sequence immutability:
+
+## Transaction Sequence Immutability
+
+Ensuring the immutability of transaction sequences is essential for ledger integrity and auditability in the SMT protocol. We present techniques used in the protocol to achieve this.
+
+### Challenges
+
+In sharded architectures, transaction sequences must be immutable despite:
+
+* Independent transaction processing across shards
+* Lack of global coordination
+
+This necessitates decentralized mechanisms for transaction ordering and recording.
+
+### Transaction Ordering
+
+The SMT protocol achieves immutable ordering through:
+
+**Client-Assigned Ordinal Ranks:** Each transaction `tx` is tagged with an ordinal rank `o(tx)` by the originating client:
+
+```
+o(tx) = f(tx) 
+```
+
+Where `f()` is a deterministic function of the transaction data.
+
+**Consensus Data-Based Sequencing:** The global sequence respects consensus data like block hashes to handle asynchrony across shards.
+
+**Hashchain of Ordering:** Transactions are sequentially appended and hashed in a hashchain which cryptographically preserves ordering.
+
+### Recording Transactions
+
+Each shard `Si` maintains an ordered ledger of transactions `Li` applied to its state.
+
+**Hashchain Encoding:** `Li` is implemented as a hashchain, with each element containing:
+
+* Transaction `tx`
+* Accumulated hash `Hi` up to `tx`
+
+**Regular Randomized Checkpoints:** Periodically a randomized hash `Hi` is appended to `Li` to enable partial verification.
+
+**Consistency:** Shards verify `Li` against neighboring shards occasionally to ensure consistency.
+
+### Immutability Guarantees
+
+This approach ensures:
+
+* **Tamper-evidence:** Manipulating `Li` invalidates subsequent hashes due to collision resistance.
+* **Ordering Proof:** Merkle proofs on `Li` can validate presence and sequence of transactions.
+* **Light Client Verification:** Checkpoints let light clients efficiently verify transaction history.
+
+Together, these mechanisms deliver a robustly immutable record of transactions across shards in the SMT protocol.\
+\
+
 
 ***
