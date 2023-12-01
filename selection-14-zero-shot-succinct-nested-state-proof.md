@@ -32,10 +32,6 @@ where $$\bigoplus$$ represents a cryptographic operation that combines individua
 
 ### Optimization and Scalability
 
-Here is an expanded version of the section on Zero-Shot Succinct Nested State Proofs $$(ZSSNSP)$$:
-
-## Zero-Shot Succinct Nested State Proofs
-
 The Sierpinski Merkle Trie $$(SMT)$$ blockchain employs an advanced technique called Zero-Shot Succinct Nested State Proofs $$(ZSSNSP)$$ to enable efficient verification and synchronization between shards.
 
 ### Overview
