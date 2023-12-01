@@ -20,9 +20,9 @@ This hybrid approach balances the tradeoffs of different topologies.
 
 We can formally model the hierarchical network structure as:
 
-* Let G\_s = (V\_s, E\_s) define the shard-level mesh topology
-* Let G\_i = (V\_i, E\_i) define the intra-shard star topology of shard i
-* The global topology is the composite graph G = (V, E)
+* Let $$G_s = (V_s, E_s)$$ define the shard-level mesh topology
+* Let $$G_i = (V_i, E_i)$$ define the intra-shard star topology of shard i
+* The global topology is the composite graph $$G = (V, E)$$
 
 ### Topology Optimization
 
