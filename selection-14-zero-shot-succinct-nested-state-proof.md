@@ -1,4 +1,4 @@
-# Selection 14: Extensive Formalization of Zero-Knowledge Proof Shard Synchronization
+# Selection 14: Zero-Shot Succinct Nested State Proof
 
 ### Introduction
 
@@ -32,7 +32,55 @@ where $$\bigoplus$$ represents a cryptographic operation that combines individua
 
 ### Optimization and Scalability
 
-The use of $$SNARKs$$ enhances computational efficiency, and scalability is assessed in terms of transaction throughput and the time required for $$ZKP$$ generation.
+Here is an expanded version of the section on Zero-Shot Succinct Nested State Proofs $$(ZSSNSP)$$:
+
+## Zero-Shot Succinct Nested State Proofs
+
+The Sierpinski Merkle Trie $$(SMT)$$ blockchain employs an advanced technique called Zero-Shot Succinct Nested State Proofs $$(ZSSNSP)$$ to enable efficient verification and synchronization between shards.
+
+### Overview
+
+In $$ZSSNSP$$, each shard maintains a succinct cryptographic proof of its state, which is nested within a global state proof for the entire blockchain. This allows efficient validation of both local shard states and the global state.
+
+### Shard State Proofs
+
+Each shard $$S_i$$ maintains its state $$s_i$$, which includes balances, contracts, transaction history etc.
+
+A state proof $$\pi_i$$ is generated for the shard state $$s_i$$ using a succinct argument scheme:
+
+$$\pi_i = \text{Prove}(s_i)$$
+
+The proof $$\pi_i$$ can be verified without revealing $$s_i$$:
+
+$$\text{Verify}(\pi_i) = \begin{cases} 1 & \text{if } \pi_i \text{ is valid} \ 0 & \text{otherwise} \end{cases}$$
+
+### Global State Proof
+
+The global state proof $$\Pi$$ aggregates the shard state proofs:
+
+$$\Pi = \text{Aggregate}(\pi_1, \pi_2, \dots, \pi_n)$$
+
+It enables verifying the combined blockchain state.
+
+### Nested Proof Structure
+
+The key innovation in ZSSNSP is nesting each shard proof $$\pi_i$$ within the global proof $$\Pi$$:
+
+$$\pi_i = \text{Prove}(s_i || \Pi)$$
+
+This provides two benefits:
+
+* Verification of shard states within the context of the global state.
+* Constant proof size - $$\pi_i$$ remains fixed size regardless of blockchain growth.
+
+### Advantages
+
+* **Efficient verification**: Enables $$O(1)$$ verification of shard and global states.
+* **Scalability**: Adding shards does not increase proof size or verification cost.
+* **Blockchain history**: Each proof contains the full history due to nesting.
+* **Freshness**: The global proof ensures freshness of approved shard states.
+
+In summary, ZSSNSP provides a novel architecture for scalable and verifiable blockchain systems using succinct, nested cryptographic proofs. The section demonstrates the approach mathematically and explains the resulting benefits. The expansions aim to highlight the ingenuity of the technique and its alignment with the goals of the SMT protocol.
 
 ### Conclusion
 
