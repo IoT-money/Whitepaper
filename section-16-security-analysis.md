@@ -145,7 +145,7 @@ where $$TrustScore$$ is a metric that quantifies the reliability of the transact
 * **Advantage**: The inherently decentralized structure of blockchain provides a natural defense against DoS attacks. Since there is no single point of failure, attacking one node or shard does not compromise the entire network.
 * **Conceptual Explanation**: In a distributed ledger, transactions and data are replicated across multiple nodes or shards, making it exponentially more difficult for an attacker to incapacitate the network.
 
-**Conclusion**
+Remarks
 
 By implementing rate limiting, prioritizing transactions, and leveraging its distributed ledger structure, the $$SMT$$ protocol effectively mitigates the risks posed by DoS attacks. These strategies collectively enhance the resilience of the network, ensuring that it remains functional and accessible even under attack. This comprehensive approach to security, underpinned by mathematical formalisms, aligns the $$SMT$$ protocol with the rigorous standards expected in academic and professional research, solidifying its standing as a robust solution for decentralized architectures.
 
@@ -188,3 +188,4 @@ Where $$(f)$$ is a function that calculates the total reward for a node based on
 $$\text{DetectAnomaly}(NetworkData) = \text{MLModel}(NetworkData)$$
 
 In this case, $${MLModel}$$ represents a machine learning model trained to recognize patterns and behaviors that deviate from the norm, signaling potential collusion.
+
