@@ -2,6 +2,8 @@
 
 **Scalability Challenges in Blockchain**
 
+<figure><img src=".gitbook/assets/I_want_you_to_draw_a_bunch_of_sierpinski_triangle_glowing_crystal_shards_sticking_out_of_the_ground,_and_they_all_have_glowing_electric_beams_all_emitting_to_a_central_sierpinski_triangle_shaped_hat_wearing_wizard_that_has_an_eye_in_the_mid.png" alt=""><figcaption></figcaption></figure>
+
 Blockchain scalability challenges primarily revolve around the trade-offs between decentralization, security, and scalability, often referred to as the Blockchain Trilemma. Traditional blockchain networks like Bitcoin and Ethereum face issues with transaction throughput and latency, primarily due to their consensus mechanisms (e.g., Proof of Work) and the necessity of each node processing every transaction. This leads to bottlenecks, especially as the number of transactions increases.
 
 A mathematical representation of the throughput limitation can be expressed as:
