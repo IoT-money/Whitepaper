@@ -56,4 +56,62 @@ $$
 \text{Variance}(\{\text{OrdinalRank}(t) \ | \ t \in \text{Transactions}\}) \rightarrow \text{minimum}
 $$
 
+Here is an expanded version of the section on logical clocks and dense timestamps for transaction ordering:
+
+## Logical Clocks and Dense Timestamps
+
+Handling timestamp discrepancies is critical in asynchronous and decentralized environments. The SMT protocol employs techniques like logical clocks and dense timestamps to ensure consistent transaction ordering.
+
+### Challenge of Timestamp Discrepancies
+
+In distributed systems, nodes may have inconsistent timestamps due to:
+
+* Clock skew between nodes
+* Varying time zones
+* Lack of global time reference
+
+This can cause transaction ordering ambiguity.
+
+### Logical Clocks
+
+Logical clocks provide a partial ordering of events in distributed systems.
+
+Each node maintains a logical clock counter $$C_i$$. When generating an event, node $$i$$ increments $$C_i$$ and timestamps the event with its current counter value.
+
+Nodes synchronize counters when communicating. On receiving a message with remote counter $$C_j$$, a node $$i$$ updates its counter:
+
+$$
+C_i \gets \max(C_i, C_j) + 1
+$$
+
+This guarantees monotonicity and a consistent partial order.
+
+#### Usage in SMT
+
+Logical clocks enable chronological ordering of transactions originating from different shards. Transactions are ordered by their logical timestamps.
+
+### Dense Timestamps
+
+Dense timestamps assign timestamps in a gapless sequence across transactions.
+
+Each transaction is tagged with:
+
+$$
+\text{Timestamp}(t) = \max(\text{PreviousTimestamps}) + 1
+$$
+
+#### Benefits
+
+* Eliminates timestamp gaps or ambiguity
+* Aligns with ordinal transaction ordering
+* Enables total ordering of transactions
+
+#### Usage in SMT
+
+Dense timestamps provide a global total order of transactions in the asynchronous SMT protocol.
+
+### Conclusion
+
+Logical clocks and dense timestamps are effective techniques to handle timestamp discrepancies in distributed environments like SMT. They enable chronological transaction ordering and align with the ordinal theory-based ordering used in the protocol.
+
 ***
