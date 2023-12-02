@@ -1,6 +1,9 @@
 # Section 22: Optimized Light Clients in the SMT Protocol
 
+\
 **High Availability and Perma-Storing**
+
+<figure><img src=".gitbook/assets/style=high_depth_up_close_textures_and_fabrics._subject=open_cockpit_biplane_wearing_microchip_texture_sierpinski_triangle_shaped_leather_pilot_cap_with_goggle_for_one_eye_that_has_an_eye_in_the_middle._others_flying_around_too._scene__open.png" alt=""><figcaption></figcaption></figure>
 
 Optimized light clients in the SMT protocol emphasize high availability through diverse client types and perma-storing mechanisms. This ensures that proofs essential for the functioning of light clients are always accessible.
 
