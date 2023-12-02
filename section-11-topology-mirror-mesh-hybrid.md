@@ -1,7 +1,5 @@
 # Section 11: Topology Mirror Mesh Hybrid
 
-Analysis
-
 ## Topological Considerations for the SMT Protocol
 
 The network topology plays a key role in the scalability, security, and performance of the SMT protocol. We discuss several topological factors.
