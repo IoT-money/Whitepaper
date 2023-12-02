@@ -1,6 +1,9 @@
 # Section 16: Security Analysis
 
+\
 We analyze the security of balance invariance in the SMT protocol by considering possible attack vectors:
+
+<figure><img src=".gitbook/assets/style=high_depth_textures_and_fabrics._scene=court_room_with_the_cop_wearing_microchip_texture_sierpinski_triangle_shaped_hat_wearing_wizard_robocop_that_has_an_eye_in_the_middle._creepy_inmates_watch._as_evil_node_criminal_triangle_head_in.png" alt=""><figcaption></figcaption></figure>
 
 #### Intra-shard Attacks
 
