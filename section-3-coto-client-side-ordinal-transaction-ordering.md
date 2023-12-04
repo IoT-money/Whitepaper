@@ -56,8 +56,6 @@ $$
 \text{Variance}(\{\text{OrdinalRank}(t) \ | \ t \in \text{Transactions}\}) \rightarrow \text{minimum}
 $$
 
-Here is an expanded version of the section on logical clocks and dense timestamps for transaction ordering:
-
 ## Logical Clocks and Dense Timestamps
 
 Handling timestamp discrepancies is critical in asynchronous and decentralized environments. The SMT protocol employs techniques like logical clocks and dense timestamps to ensure consistent transaction ordering.

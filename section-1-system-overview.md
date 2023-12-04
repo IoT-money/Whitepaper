@@ -22,7 +22,7 @@ $$
 \text{Ordinal Rank}(\text{Transaction } T) = f(T, \text{Client Data})
 $$
 
-Here,  $$( f )$$  represents a function that assigns a unique rank to e ach transaction based on client-side data, ensuring an efficient and decentralized ordering process.&#x20;
+Here,  $$( f )$$  represents a function that assigns a unique rank to each transaction based on client-side data, ensuring an efficient and decentralized ordering process.&#x20;
 
 #### Triadic Consensus
 
